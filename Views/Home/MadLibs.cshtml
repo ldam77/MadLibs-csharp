@@ -1,18 +1,31 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <title>Mad Libs</title>
-  </head>
-  <body class="container-fluid">
-    <div id="story"> -->
-      <h1>
-        A Fantastical Adventure featuring @Model.GetPerson1() and @Model.GetPerson2()
-      </h1>
-      <p>
-        One day, @Model.GetPerson1() and @Model.GetPerson2() were walking through the woods, when suddenly a giant @Model.GetAnimal() appeared. "@Model.GetExclaimation()", @Model.GetPerson1() cried. The two of them @Model.GetVerb() as quickly possible, and when they were safe, @Model.GetPerson1() and @Model.GetPerson2() gave each other a giant @Model.GetNoun().
-      </p>
-    <!-- </div>
-  </body>
-</html> -->
+<style>
+body {
+  background-color: #BFD7B5;
+  font-family: skia;
+  color: #413C58;
+  text-align: center;
+  font-size: 2em;
+}
+h1 {
+  font-size: 3em;
+}
+.highlight {
+  color: #4A7268;
+  font-style: italic;
+}
+.exclaimation {
+  color: red;
+  font-weight: bold;
+}
+</style>
+<body>
+  <div id="story">
+    <h1>
+      A Fantastical Adventure featuring @Model.GetPerson1() and @Model.GetPerson2()
+    </h1>
+    <p>
+      One day, <span class="highlight">@Model.GetPerson1()</span> and <span class="highlight">@Model.GetPerson2()</span> were walking through the woods, when suddenly a giant @Model.GetAnimal() appeared. "<span class="exclaimation">@Model.GetExclaimation()</span>", @Model.GetPerson1() cried. The two of them @Model.GetVerb() as quickly as possible, and when they were safe, @Model.GetPerson1() and @Model.GetPerson2() gave each other a giant @Model.GetNoun().
+    </p>
+    <img src="img/nature.jpeg" alt="">
+  </div>
+</body>
